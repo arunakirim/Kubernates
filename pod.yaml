@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: web-frontend
+  labels:
+    name: web-frontend
+    app: web-frontend
+spec:
+  containers:
+    - name: nginx-webfrontend
+      image: nginx
+      ports:
+        - containerPort: 80
+    
